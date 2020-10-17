@@ -8,6 +8,13 @@ import { HomeComponent } from './components/home/home.component';
 import {RouterModule} from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { SearchComponent } from './components/search/search.component';
+import { IntroComponent } from './components/intro/intro.component';
+import { CtaComponent } from './components/cta/cta.component';
+import { OffersComponent } from './components/offers/offers.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { TrendingComponent } from './components/trending/trending.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { CopyrightComponent } from './components/copyright/copyright.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +22,14 @@ import { SearchComponent } from './components/search/search.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    SearchComponent
+    SearchComponent,
+    IntroComponent,
+    CtaComponent,
+    OffersComponent,
+    TestimonialsComponent,
+    TrendingComponent,
+    ContactComponent,
+    CopyrightComponent
   ],
     imports: [
         BrowserModule,
