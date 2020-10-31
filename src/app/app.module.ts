@@ -15,6 +15,10 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
 import { TrendingComponent } from './components/trending/trending.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CopyrightComponent } from './components/copyright/copyright.component';
+import { RegisterComponent } from './components/register/register.component';
+import { HomelayoutComponent } from './components/homelayout/homelayout.component';
+import { LoginComponent } from './components/login/login.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,17 +29,21 @@ import { CopyrightComponent } from './components/copyright/copyright.component';
     SearchComponent,
     IntroComponent,
     CtaComponent,
+    LoginComponent,
     OffersComponent,
     TestimonialsComponent,
     TrendingComponent,
     ContactComponent,
-    CopyrightComponent
+    CopyrightComponent,
+    RegisterComponent,
+    HomelayoutComponent
   ],
-    imports: [
-        BrowserModule,
-        RouterModule,
-        AppRoutingModule
-    ],
+  imports: [
+    BrowserModule,
+    RouterModule,
+    AppRoutingModule,
+    FormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
