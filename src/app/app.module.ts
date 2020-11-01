@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { authInterceptorProviders } from './helpers/auth.interceptor' ;
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import {RouterModule} from '@angular/router';
+import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { SearchComponent } from './components/search/search.component';
 import { IntroComponent } from './components/intro/intro.component';
@@ -42,9 +44,10 @@ import {FormsModule} from '@angular/forms';
     BrowserModule,
     RouterModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [authInterceptorProviders ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
