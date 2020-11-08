@@ -10,9 +10,7 @@ import {RouterModule} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { SearchComponent } from './components/search/search.component';
-import { IntroComponent } from './components/intro/intro.component';
-import { CtaComponent } from './components/cta/cta.component';
-import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+
 import { ContactComponent } from './components/contact/contact.component';
 import { CopyrightComponent } from './components/copyright/copyright.component';
 import { RegisterComponent } from './components/register/register.component';
@@ -31,10 +29,7 @@ import { AboutComponent } from './components/about/about.component';
     FooterComponent,
     HomeComponent,
     SearchComponent,
-    IntroComponent,
-    CtaComponent,
     LoginComponent,
-    TestimonialsComponent,
     ContactComponent,
     CopyrightComponent,
     RegisterComponent,
