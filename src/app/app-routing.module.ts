@@ -5,6 +5,8 @@ import {HomelayoutComponent} from './components/homelayout/homelayout.component'
 import {ContactComponent} from './components/contact/contact.component';
 import {LoginComponent} from './components/login/login.component';
 import {RegisterComponent} from './components/register/register.component';
+import {SearchComponent} from './components/search/search.component';
+import {AboutComponent} from './components/about/about.component';
 
 const routes: Routes = [
 
@@ -24,13 +26,19 @@ const routes: Routes = [
 
       },
       {
+        path: 'search', component: SearchComponent
+      },
+      {
+        path: 'aboutus', component: AboutComponent
+      },
+      {
+        path: 'news', component: SearchComponent
+      },
+      {
         path: 'register', component: RegisterComponent
       },
     ]
   },
-
-
-  // Wildcard Route if no route is found == 404 NOTFOUND page
   {
     path: '**', pathMatch: 'full', redirectTo: ''
   }
