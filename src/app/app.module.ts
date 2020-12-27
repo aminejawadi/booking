@@ -21,6 +21,7 @@ import { FlightsComponent } from './components/flights/flights.component';
 import { HotelsComponent } from './components/hotels/hotels.component';
 import { CarsComponent } from './components/cars/cars.component';
 import { AboutComponent } from './components/about/about.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { AboutComponent } from './components/about/about.component';
     FlightsComponent,
     HotelsComponent,
     CarsComponent,
-    AboutComponent
+    AboutComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

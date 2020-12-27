@@ -7,6 +7,7 @@ import {LoginComponent} from './components/login/login.component';
 import {RegisterComponent} from './components/register/register.component';
 import {SearchComponent} from './components/search/search.component';
 import {AboutComponent} from './components/about/about.component';
+import {ProfileComponent} from './profile/profile.component';
 
 const routes: Routes = [
 
@@ -36,6 +37,9 @@ const routes: Routes = [
       },
       {
         path: 'register', component: RegisterComponent
+      },
+      {
+        path: 'profile', component: ProfileComponent
       },
     ]
   },

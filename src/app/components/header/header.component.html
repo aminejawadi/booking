@@ -1,37 +1,39 @@
+<div id="app">
+  <nav class="navbar navbar-expand navbar-light bg-light">
+    <a href="#" class="navbar-brand">Booking Guru</a>
+    <ul class="navbar-nav mr-auto" routerLinkActive="active">
+      <li class="nav-item">
+        <a href="/home" class="nav-link" routerLink="home">Home </a>
 
-<!-- Header -->
+      </li>
+<li><a href="/contact" class="nav-link" routerLink="contact">Contact</a></li>
 
-<header class="header">
+      <li><a href="/search" class="nav-link" routerLink="search">Offers</a></li>
+      <li><a href="/search" class="nav-link" routerLink="profile">Profile</a></li>
+      <li class="nav-item">
+        <a href="/home" class="nav-link" *ngIf="isLoggedIn" routerLink="home"></a>
+      </li>
+    </ul>
 
-  <!-- Top Bar -->
+    <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
+      <li class="nav-item">
+        <a href="/register" class="nav-link" routerLink="register">Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a href="/login" class="nav-link" routerLink="login">Login</a>
+      </li>
+    </ul>
 
-  <div class="top_bar">
-    <div class="container">
-      <div class="row">
-        <div class="col d-flex flex-row">
-          <div class="phone">+21652191189</div>
-          <div class="social">
-            <ul class="social_list">
+    <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
+      <li class="nav-item">
+        <a href="/home" class="nav-link" routerLink="profile">{{ username }}</a>
+      </li>
+      <li class="nav-item">
+        <a href class="nav-link" (click)="logout()">LogOut</a>
+      </li>
+    </ul>
+  </nav>
 
-
-              <li class="social_list_item"><a routerLink="">Home<i class="text-light" aria-hidden="true"></i> </a> </li>
-              <li class="social_list_item"><a routerLink="/search">Offers<i class="text-light" aria-hidden="true"></i> </a> </li>
-              <li class="social_list_item"><a routerLink="/contact">Contact Us<i class="text-light" aria-hidden="true"></i> </a> </li>
-              <li class="social_list_item"><a routerLink="/aboutus">About Us<i class="text-light" aria-hidden="true"></i> </a> </li>
-
-            </ul>
-          </div>
-          <div class="user_box ml-auto">
-            <div class="user_box_login user_box_link"><a routerLink="/login">login</a></div>
-            <div class="user_box_register user_box_link"><a routerLink="/register">register</a></div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="container">
   </div>
-
-  <!-- Main Navigation -->
-
-
-
-</header>
+</div>
